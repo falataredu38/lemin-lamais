@@ -5,7 +5,7 @@
 ## Login   <lamais_a@epitech.net>
 ## 
 ## Started on  Fri Nov 16 14:41:15 2012 adrien lamaison
-## Last update Wed Apr 17 09:39:21 2013 adrien lamaison
+## Last update Wed Apr 17 10:54:45 2013 gueux
 ##
 
 RM	= rm -f
@@ -29,19 +29,19 @@ SRCS	= main.c		\
 
 OBJS	= $(SRCS:.c=.o)
 
-$(NAME): $(OBJS)
+$(NAME)	: $(OBJS)
 	make -C lib/
 	$(CC) -o  $(NAME) $(OBJS) $(LIB)
 
-all: $(NAME)
+all	: $(NAME)
 
-clean:
+clean	:
 	$(RM) $(OBJS)
-	make -C lib/ clean	
+	make -C lib/ clean
 	clean
 
-fclean: clean
+fclean	: clean
 	$(RM) $(NAME)
 	$(RM) $(LIBMY)
 
-re: fclean all
+re	: fclean all
