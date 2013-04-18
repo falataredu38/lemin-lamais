@@ -1,0 +1,1 @@
+perl gmin.pl 10 20 10000 > tutu
